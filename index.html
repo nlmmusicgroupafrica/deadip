@@ -9,21 +9,19 @@
   <style>
     :root {
       --primary: #0A0A0A;
-      --secondary: #FF6B35;
-      --accent: #6A5ACD;
-      --sunset-orange: #FF8C00;
-      --sunset-pink: #FF1493;
-      --ocean-purple: #9370DB;
-      --ocean-blue: #4169E1;
+      --secondary: #00FF9D;
+      --accent: #FF3E80;
+      --electric-blue: #00D4FF;
+      --neon-purple: #B026FF;
+      --vibrant-pink: #FF2E92;
       --text: #FFFFFF;
       --light-text: #BBBBBB;
       --bg: #0A0A0A;
       --card-bg: rgba(20, 20, 20, 0.8);
-      --border: rgba(255, 140, 0, 0.3);
+      --border: rgba(0, 255, 157, 0.3);
       --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-      --gradient: linear-gradient(135deg, var(--sunset-orange), var(--sunset-pink), var(--ocean-purple), var(--ocean-blue));
-      --sunset-glow: 0 0 5px rgba(255, 140, 0, 0.5), 0 0 10px rgba(255, 140, 0, 0.4), 0 0 15px rgba(255, 20, 147, 0.3);
-      --ocean-glow: 0 0 5px rgba(65, 105, 225, 0.5), 0 0 10px rgba(65, 105, 225, 0.4), 0 0 15px rgba(147, 112, 219, 0.3);
+      --gradient: linear-gradient(135deg, var(--electric-blue), var(--neon-purple), var(--vibrant-pink));
+      --glow: 0 0 5px rgba(0, 255, 157, 0.5), 0 0 10px rgba(0, 255, 157, 0.4), 0 0 15px rgba(255, 62, 128, 0.3);
     }
     
     * {
@@ -39,8 +37,8 @@
       line-height: 1.6;
       overflow-x: hidden;
       background-image: 
-        radial-gradient(circle at 20% 30%, rgba(255, 140, 0, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 80% 70%, rgba(65, 105, 225, 0.15) 0%, transparent 40%);
+        radial-gradient(circle at 20% 30%, rgba(0, 255, 157, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(255, 62, 128, 0.15) 0%, transparent 40%);
     }
     
     a {
@@ -99,7 +97,7 @@
     .logo img {
       height: 40px;
       transition: var(--transition);
-      filter: drop-shadow(0 0 5px rgba(255, 140, 0, 0.5));
+      filter: drop-shadow(0 0 5px rgba(0, 255, 157, 0.5));
     }
     
     .logo:hover img {
@@ -167,8 +165,8 @@
       width: 100%;
       height: 100%;
       background: 
-        radial-gradient(circle at 20% 30%, rgba(255, 140, 0, 0.2) 0%, transparent 30%),
-        radial-gradient(circle at 80% 70%, rgba(65, 105, 225, 0.2) 0%, transparent 30%);
+        radial-gradient(circle at 20% 30%, rgba(0, 255, 157, 0.2) 0%, transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(255, 62, 128, 0.2) 0%, transparent 30%);
       z-index: 1;
     }
     
@@ -194,7 +192,7 @@
     .hero-image img {
       width: 100%;
       border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 140, 0, 0.3);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 255, 157, 0.3);
       border: 3px solid transparent;
       background: var(--gradient) padding-box, var(--gradient) border-box;
       background-origin: border-box;
@@ -264,12 +262,12 @@
     .btn-primary {
       background: var(--gradient);
       color: white;
-      box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+      box-shadow: 0 5px 15px rgba(0, 255, 157, 0.3);
     }
     
     .btn-primary:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(255, 140, 0, 0.4), var(--sunset-glow);
+      box-shadow: 0 10px 20px rgba(0, 255, 157, 0.4), var(--glow);
       color: white;
     }
     
@@ -283,7 +281,7 @@
       background: var(--accent);
       color: var(--primary);
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(65, 105, 225, 0.3), var(--ocean-glow);
+      box-shadow: 0 10px 20px rgba(255, 62, 128, 0.3), var(--glow);
     }
     
     /* Sections */
@@ -342,7 +340,7 @@
     
     .about-card:hover {
       transform: translateY(-10px) scale(1.03);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 140, 0, 0.2);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 255, 157, 0.2);
     }
     
     .about-card img {
@@ -381,7 +379,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: radial-gradient(circle at top right, rgba(255, 140, 0, 0.1) 0%, transparent 70%);
+      background: radial-gradient(circle at top right, rgba(0, 255, 157, 0.1) 0%, transparent 70%);
       z-index: 0;
     }
     
@@ -402,7 +400,7 @@
     
     .mother-tribute:hover img {
       transform: scale(1.05);
-      box-shadow: 0 8px 25px rgba(255, 140, 0, 0.4);
+      box-shadow: 0 8px 25px rgba(0, 255, 157, 0.4);
     }
     
     .mother-tribute-content {
@@ -413,7 +411,7 @@
     
     .mother-tribute p {
       font-size: 1.8rem;
-      color: var(--sunset-orange);
+      color: var(--secondary);
       font-weight: 800;
       text-align: center;
       margin-bottom: 15px;
@@ -422,7 +420,7 @@
     
     .mother-tribute .title {
       font-size: 1.2rem;
-      color: var(--ocean-blue);
+      color: var(--electric-blue);
       text-align: center;
       font-weight: 600;
     }
@@ -443,7 +441,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: radial-gradient(circle at center, rgba(255, 140, 0, 0.1) 0%, transparent 70%);
+      background: radial-gradient(circle at center, rgba(0, 255, 157, 0.1) 0%, transparent 70%);
       z-index: 0;
     }
     
@@ -498,13 +496,13 @@
     
     .family-member:hover img {
       transform: scale(1.1);
-      box-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+      box-shadow: 0 0 20px rgba(0, 255, 157, 0.5);
     }
     
     .family-member h3 {
       font-size: 1.2rem;
       margin-bottom: 10px;
-      color: var(--ocean-blue);
+      color: var(--electric-blue);
     }
     
     .family-member p {
@@ -535,7 +533,7 @@
     
     .artist-card:hover {
       transform: translateY(-10px) scale(1.03);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(65, 105, 225, 0.2);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 62, 128, 0.2);
     }
     
     .artist-image-container {
@@ -586,7 +584,7 @@
     
     .artist-social a:hover {
       transform: translateY(-5px) scale(1.1);
-      box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+      box-shadow: 0 5px 15px rgba(0, 255, 157, 0.4);
     }
     
     .artist-info {
@@ -627,12 +625,12 @@
     .artist-genre {
       display: inline-block;
       padding: 5px 15px;
-      background: rgba(65, 105, 225, 0.1);
+      background: rgba(255, 62, 128, 0.1);
       color: var(--accent);
       border-radius: 20px;
       font-size: 0.8rem;
       font-weight: 600;
-      border: 1px solid rgba(65, 105, 225, 0.3);
+      border: 1px solid rgba(255, 62, 128, 0.3);
     }
     
     /* Releases Section */
@@ -651,7 +649,7 @@
     
     .release-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 140, 0, 0.2);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 255, 157, 0.2);
     }
     
     .release-image {
@@ -913,7 +911,7 @@
     
     .platform-btn:hover {
       transform: scale(1.05);
-      box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+      box-shadow: 0 5px 15px rgba(0, 255, 157, 0.3);
     }
     
     /* Contact Icons */
@@ -943,12 +941,12 @@
       color: white;
       font-size: 30px;
       transition: var(--transition);
-      box-shadow: 0 5px 15px rgba(255, 140, 0, 0.3);
+      box-shadow: 0 5px 15px rgba(0, 255, 157, 0.3);
     }
     
     .contact-icon a:hover {
       transform: translateY(-5px) scale(1.1);
-      box-shadow: 0 8px 20px rgba(255, 140, 0, 0.5);
+      box-shadow: 0 8px 20px rgba(0, 255, 157, 0.5);
     }
     
     .contact-icon span {
@@ -1112,13 +1110,13 @@
           <div class="platform-card">
             <i class="fab fa-spotify platform-icon"></i>
             <h3 class="platform-name">Spotify</h3>
-            <a href="https://open.spotify.com/artist/2jjoBPEyzPItVkLhCLXx93?si=iZqPN_X0TuGoynYkQNE6Gg">Listen</a>
+            <a href="https://open.spotify.com/artist/2jjoBPEyzPItVkLhCLXx93?si=iZqPN_X0TuGoynYkQNE6Gg" class="platform-btn" target="_blank">Listen</a>
           </div>
           
           <div class="platform-card">
             <i class="fab fa-apple platform-icon"></i>
             <h3 class="platform-name">Apple</h3>
-            <a href="https://music.apple.com/us/artist/deadip/1813830329" target="_blank">Listen</a>
+            <a href="https://music.apple.com/us/artist/deadip/1813830329" class="platform-btn" target="_blank">Listen</a>
           </div>
           
           <div class="platform-card">
@@ -1140,6 +1138,7 @@
             <h3 class="release-title">From The World To The World</h3>
             <p class="release-description">
              A dynamic DJ and producer specializing in Progressive House and Afro House, crafting hypnotic grooves that blend deep rhythms with soulful, dance-driven energy. His sound is a fusion of rich African influences and modern electronic production, designed to move both bodies and minds
+            </p>
             <div class="release-links">
               <a href="https://www.mediafire.com/file/0hyerk0iaktw1lf/T.fly_deDeejay_-_From_Street_To_The_World_EP.zip/file" class="btn btn-primary" target="_blank">Download Album</a>
             </div>
@@ -1228,9 +1227,9 @@
       <div class="icon-only">
         <a href="To Be Confirmed" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="To Be Confirmed" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="https://youtube.com/@deadipmusic?si=Rv8bh3CxC24CDMXU"><i class="fab fa-youtube"></i></a>
-        <a href="https://open.spotify.com/artist/2jjoBPEyzPItVkLhCLXx93?si=iZqPN_X0TuGoynYkQNE6Gg"><i class="fab fa-spotify"></i></a>
-        <a href="https://music.apple.com/us/artist/deadip/1813830329"><i class="fab fa-apple"></i></a>
+        <a href="https://youtube.com/@deadipmusic?si=Rv8bh3CxC24CDMXU" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://open.spotify.com/artist/2jjoBPEyzPItVkLhCLXx93?si=iZqPN_X0TuGoynYkQNE6Gg" target="_blank"><i class="fab fa-spotify"></i></a>
+        <a href="https://music.apple.com/us/artist/deadip/1813830329" target="_blank"><i class="fab fa-apple"></i></a>
       </div>
       
       <p style="margin-top: 30px; color: var(--light-text); font-size: 0.8rem;">
